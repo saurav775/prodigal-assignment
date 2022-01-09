@@ -24,6 +24,11 @@ a:visited {
   margin: auto;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;

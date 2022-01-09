@@ -1,0 +1,17 @@
+.range-slider-wrp {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.range-slider-wrp label {
+  display: flex;
+  align-self: flex-start;
+}
+.range-value-wrp {
+  display: flex;
+}
+.range-slider {
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 40rem;
+}

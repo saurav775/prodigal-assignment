@@ -1,0 +1,39 @@
+.call-data-container {
+  margin-top: 2rem;
+}
+.rows {
+  display: flex;
+  width: 100%;
+}
+.rows div {
+  flex: 33%;
+}
+.rows-heading {
+  text-transform: capitalize;
+  background-color: #656565;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 1px;
+}
+.rows-heading:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.rows-heading:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.row-data {
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+.row-data:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.row-data:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

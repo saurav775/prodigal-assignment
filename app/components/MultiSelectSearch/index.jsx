@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './MultiSelectSearch.css';
 
-function MultiSelectSearch() {
+function MultiSelectSearch(props) {
+  const { getSelectedAgents } = props;
   const [agents, setAgents] = useState([]);
   const [agentName, setAgentName] = useState('');
   const [formError, setFormError] = useState(false);
@@ -57,12 +58,14 @@ function MultiSelectSearch() {
     setSelectedAgents(selected);
     setDropdown(false);
     setAgentName('');
+    getSelectedAgents(selected);
   };
 
   const handleRemoveSelected = (event, selectedAgent) => {
     let selected = [...selectedAgents];
     selected = selected.filter(s => s !== selectedAgent);
     setSelectedAgents(selected);
+    getSelectedAgents(selected);
   };
 
   return (
@@ -72,13 +75,15 @@ function MultiSelectSearch() {
       ) : (
         <>
           <div className="input-wrp">
-            <input
-              type="text"
-              value={agentName}
-              placeholder="Search Agents..."
-              onChange={handleChange}
-            />
-            <i className="fa fa-search" />
+            <label>
+              <input
+                type="text"
+                value={agentName}
+                placeholder="Search Agents..."
+                onChange={handleChange}
+              />
+              <i className="fa fa-search" />
+            </label>
           </div>
           {!!filteredAgents.length && dropdownIsOpen && (
             <div className="dropdown-container">

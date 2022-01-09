@@ -1,7 +1,22 @@
 .filters {
   display: flex;
+  justify-content: space-between;
 }
 .home-container {
   min-height: 100vh;
   padding: 2rem 0;
+}
+
+.btn-search {
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: #4c9a2a;
+  color: #fff;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-search:disabled {
+  cursor: no-drop;
+  background-color: #e3e3e3;
 }
