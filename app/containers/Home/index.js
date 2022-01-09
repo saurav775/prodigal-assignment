@@ -15,16 +15,25 @@ import { useInjectReducer } from 'utils/injectReducer';
 import makeSelectHome from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import { Navbar } from '../../components';
+import { Navbar, MultiSelectSearch } from '../../components';
+
+import './Home.css';
 
 export function Home() {
   useInjectReducer({ key: 'home', reducer });
   useInjectSaga({ key: 'home', saga });
 
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+      <div className="home-container">
+        <div className="container">
+          <div className="filters">
+            <MultiSelectSearch />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

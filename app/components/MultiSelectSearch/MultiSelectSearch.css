@@ -1,0 +1,79 @@
+.multiselect-wrp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 40rem;
+}
+
+.multiselect-wrp .input-wrp {
+  position: relative;
+  font-size: 1.8rem;
+}
+
+.multiselect-wrp .input-wrp input {
+  outline: none;
+  border: 1px solid #e3e3e3;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 40rem;
+  font-size: 1.4rem;
+}
+
+.multiselect-wrp .input-wrp i {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #656565;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 4.5rem;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.options-wrp {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options-wrp li {
+  padding: 0.5rem 1rem;
+}
+
+.options-wrp li:hover {
+  background-color: #f3f3f3;
+}
+
+.selected-agent-wrp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-agent {
+  display: flex;
+  background-color: #656565;
+  padding: 0.6rem;
+  color: #fff;
+  align-items: center;
+  border-radius: 2px;
+  margin-top: 1.5rem;
+}
+
+.selected-agent:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.selected-agent div {
+  margin-left: 0.6rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}

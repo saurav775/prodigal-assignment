@@ -3,10 +3,10 @@ import { Navbar } from '../../components';
 
 function Labels() {
   return (
-    <div>
+    <>
       <Navbar />
       Labels
-    </div>
+    </>
   );
 }
 

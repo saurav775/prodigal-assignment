@@ -16,11 +16,11 @@ import './App.css';
 
 export default function App() {
   return (
-    <div>
+    <main className="main-container">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/labels" component={Labels} />
       </Switch>
-    </div>
+    </main>
   );
 }
