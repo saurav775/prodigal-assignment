@@ -1,0 +1,31 @@
+.label-container {
+  margin-top: 2rem;
+}
+.label-check-wrp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.label-check-wrp input {
+  cursor: pointer;
+}
+.labels-wrp {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.label-item {
+  background-color: #656565;
+  padding: 0.5rem 0.8rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+.select-all-wrp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.select-all-wrp input {
+  margin-right: 2rem;
+  cursor: pointer;
+}
