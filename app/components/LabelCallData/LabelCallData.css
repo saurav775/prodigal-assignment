@@ -20,6 +20,10 @@
   margin-left: 1rem;
   color: #fff;
 }
+.label-item span {
+  margin-left: 1rem;
+  cursor: pointer;
+}
 .select-all-wrp {
   display: flex;
   align-items: center;
@@ -28,4 +32,46 @@
 .select-all-wrp input {
   margin-right: 2rem;
   cursor: pointer;
+}
+.actions {
+  margin-bottom: 2rem;
+}
+.add-wrapper {
+  margin-bottom: 2rem;
+}
+.add-wrapper input {
+  outline: none;
+  border: 1px solid #e3e3e3;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.4rem;
+}
+.add-wrapper button {
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.btn-update {
+  background-color: cornflowerblue;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-update:disabled {
+  cursor: no-drop;
+  background-color: #e3e3e3;
+}
+.new-label-wrp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-label-text {
+  background-color: #e3e3e3;
+  padding: 5px;
+  width: fit-content;
+  min-width: 6rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
